@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selectors */
+        p {
+            color: blueviolet;
+            font-size: medium;
+        }
+
+        /* ID Selectors */
+        #unique {
+            color: chartreuse;
+            font-size: smaller;
+            font-weight: 900;
+            background-color: brown;
+        }
+
+        /* Class Selectors */
+        .cls{
+            color: blue;
+            font-size: 24px;
+            background-color: darkgoldenrod;
+        }
+
+        .bold {
+            font-weight: bolder;
+        }
+
+        /* Universal Selectors */
+        * {
+            font-style: italic;
+        }
+
+        /* Grouping Selectors */
+        li,ul {
+            color: darkgreen;
+            font-size: 30px;
+            background-color: lightcoral;
+        }
+
+        /* Attribute Selectors */
+        input[type = "email"]{
+            color: blueviolet;
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Exploring CSS selectors</h3>
+    
+    <!-- Element Selectors -->
+    <p>This is about Element selectors</p>
+    <!-- ID Selectors -->
+    <p id = "unique">ID Selectors</p>
+    <!-- Class Selectors -->
+    <p class="cls bold">My Name is Sarafat Karim</p>
+    <p>My Name is Sarafat Karim</p>
+    <p class="cls bold">My Name is Sarafat Karim</p>
+    <p>My Name is Sarafat Karim</p>
+    <p>My Name is Sarafat Karim</p>
+
+    <!-- Grouping Selectors -->
+    <div>
+        <ul>
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Higher Math</li>
+            <li>Biology</li>
+        </ul>
+    </div>
+
+    <form action="">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+    </form>
+</body>
+</html>
