@@ -47,7 +47,17 @@
             color: blueviolet;
             font-weight: bolder;
         }
+
+        /* Specifically select a small portion */
+        span{
+            color: aqua;
+        }
         
+        /* Specifically select a big portion */
+        div{
+            background-color: maroon;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -61,17 +71,19 @@
     <p class="cls bold">My Name is Sarafat Karim</p>
     <p>My Name is Sarafat Karim</p>
     <p class="cls bold">My Name is Sarafat Karim</p>
-    <p>My Name is Sarafat Karim</p>
+    <p>My Name is <span>Sarafat Karim</span></p>
     <p>My Name is Sarafat Karim</p>
 
     <!-- Grouping Selectors -->
+    <ul>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Higher Math</li>
+        <li>Biology</li>
+    </ul>
+
     <div>
-        <ul>
-            <li>Physics</li>
-            <li>Chemistry</li>
-            <li>Higher Math</li>
-            <li>Biology</li>
-        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident cumque magni dicta veritatis suscipit consequatur sapiente maiores esse aperiam cum quaerat laudantium omnis soluta sunt cupiditate eum iste, nam ullam.</p>
     </div>
 
     <form action="">
