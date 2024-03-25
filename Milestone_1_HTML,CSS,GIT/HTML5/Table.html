@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Table in HTML5</title>
+    <style>
+        table{
+            border-collapse: collapse; /*add all the border of td together*/
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        span {
+            background-color: aquamarine;
+        }
+    </style>
+    <link rel="stylesheet" href="Styles/Navigation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Audio_Video.html">Audio_Video</a></li>
+                <li><a href="Header_Main_Footer.html">Head_Main_Footer</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="Navigation.html">Navigation</a></li>
+                <li><a href="Nested_Mega_Menu.html">Nested_Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <!-- Table caption -->
+            <caption>Employee Salary Data</caption>
+            <!-- Table header -->
+            <thead>
+                <!-- Table header cell for column 1 -->
+                <th>No.</th>
+                <!-- Table header cell for column 2 -->
+                <th>Name</th>
+                <!-- Table header cell for column 3 -->
+                <th>Company</th>
+                <!-- Table header cell for column 4 -->
+                <th>Salary</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <!-- Table data for row 1, column 1 -->
+                    <td>1</td>
+                    <!-- Table data for row 1, column 2 -->
+                    <td>Bill Gates</td>
+                    <!-- Table data for row 1, column 3 -->
+                    <td>Microsoft</td>
+                    <!-- Table data for row 1, column 4 -->
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuckerberg</td>
+                    <td>Facebook</td>
+                    <td>$1300</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sarafat</td>
+                    <td>Schr0Smi1ey</td>
+                    <td>$000</td>
+                </tr>
+            </tbody>
+
+            <!-- Table footer -->
+            <tfoot>
+                <!-- Table footer row -->
+                <tr>
+                    <!-- Table data spanning all columns -->
+                    <td colspan="4" >Total Employee = 4</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- List of table-related elements with explanations -->
+        <ul>
+            <li>Table : <span>table</span></li><br>
+            <li>Table head: <span>thead</span></li><br>
+            <li>Table body: <span>tbody</span></li><br>
+            <li>Table footer: <span>tfoot</span></li><br>
+            <li>Table row: <span>tr</span></li><br>
+            <li>Table data or table cell: <span>td</span></li><br>
+            <li>Table head data: <span>th</span></li><br>
+            <li>Table Caption: <span>caption</span></li>
+        </ul>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

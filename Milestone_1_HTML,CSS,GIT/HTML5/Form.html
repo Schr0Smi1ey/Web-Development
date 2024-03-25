@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>Exploring Form in HTML5</title>
+    <!-- Internal CSS styles -->
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        fieldset {
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="Styles/Navigation.css">
+</head>
+<body>
+    <!-- Header section (currently empty) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Audio_Video.html">Audio_Video</a></li>
+                <li><a href="Header_Main_Footer.html">Head_Main_Footer</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="Navigation.html">Navigation</a></li>
+                <li><a href="Nested_Mega_Menu.html">Nested_Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>  
+        <section>
+            <!-- Heading for the form -->
+            <h2>Please fill up the form</h2>
+            <!-- Form element -->
+            <form>
+                <!-- Input field for name -->
+                <label for="name"> Your Name:
+                    <input type="text" placeholder="Your Name" id="name">
+                </label>
+
+                <!-- Input field for email -->
+                <label for="email">Your Email: 
+                    <input type="email" placeholder="Your Email" id="email">
+                </label>
+
+                <!-- Input field for phone number -->
+                <label for="phone">Your Phone:
+                    <input type="text" id="phone" placeholder="Your Phone ">
+                </label>
+
+                <!-- Fieldset for selecting one "pitha" -->
+                <fieldset>
+                    <legend>Pick One pitha</legend>
+                    <label for="chitoy">
+                        <input type="radio" name="pitha" id="chitoy"> Chitoy
+                    </label>
+                    <label for="vapa">
+                        <input type="radio" name="pitha" id="vapa"> Vapa
+                    </label>
+                    <label for="puri">
+                        <input type="radio" name="pitha" id="puri"> Puri
+                    </label>
+                </fieldset>
+
+                <!-- Fieldset for selecting multiple "vorta" -->
+                <fieldset>
+                    <legend>Choose Vorta</legend>
+                    <label for="Sorisha">
+                        <input type="checkbox" name="Vorta" id="Sorisha"> Sorisha
+                    </label>
+                    <label for="chili">
+                        <input type="checkbox" name="Vorta" id="chili"> Chili
+                    </label>
+                    <label for="shutki">
+                        <input type="checkbox" name="Vorta" id="shutki"> Shutki
+                    </label>
+                </fieldset>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Write Something"></textarea><br>
+                <!-- Reset and submit buttons -->
+                <input type="reset" value="reset">
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section (currently empty) -->
+    <footer>    
+        
+    </footer>
+</body>
+</html>

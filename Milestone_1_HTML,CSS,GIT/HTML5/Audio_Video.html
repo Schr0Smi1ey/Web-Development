@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring audio and video in HTML5</title>
+    <link rel="stylesheet" href="Styles/Navigation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Audio_Video.html">Audio_Video</a></li>
+                <li><a href="Header_Main_Footer.html">Head_Main_Footer</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="Navigation.html">Navigation</a></li>
+                <li><a href="Nested_Mega_Menu.html">Nested_Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Heading indicating the purpose of the content -->
+    <h3>Audio & Video Collection</h3>
+    
+    <!-- Audio element with controls for user interaction -->
+    <audio controls src="Media/Audio/people.mp3"></audio>
+    <!-- 
+        <audio> tag is used to embed audio content in the webpage.
+        Attributes:
+            - controls: Adds controls like play, pause, volume, etc.
+            - src: Specifies the URL of the audio file.
+    -->
+    
+    <!-- Video element with controls and specified width -->
+    <video controls width="200px" src="Media/Video/Test.mp4"></video>
+    <!-- 
+        <video> tag is used to embed video content in the webpage.
+        Attributes:
+            - controls: Adds controls like play, pause, volume, etc.
+            - width: Specifies the width of the video player.
+            - src: Specifies the URL of the video file.
+    -->
+
+    <!-- Embedded YouTube video using an iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5icyJdteziA?si=OKDNf_DnlGfrFJiN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- 
+        <iframe> tag is used to embed content from other sources into the webpage.
+        Attributes:
+            - width: Specifies the width of the iframe.
+            - height: Specifies the height of the iframe.
+            - src: Specifies the URL of the embedded content.
+            - title: Specifies the title of the embedded content (for accessibility).
+            - frameborder: Specifies whether to display a border around the iframe.
+            - allow: Specifies which actions are allowed for the iframe (e.g., autoplay).
+            - referrerpolicy: Specifies how the browser should handle referrer information when following a link from the iframe.
+            - allowfullscreen: Allows the content to be displayed in fullscreen mode.
+    -->
+</body>
+</html>
