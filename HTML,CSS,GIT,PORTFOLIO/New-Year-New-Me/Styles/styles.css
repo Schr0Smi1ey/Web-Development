@@ -12,14 +12,14 @@
 body {
     font-family: "Work Sans", sans-serif;
     margin: 0 auto;
-    max-width: 1600px;
-    max-height: 808px;
+    max-width: 1984px;
+    max-height: 900px;
 }
 
 /* Header Styles */
 .header {
-    width: 1600px;
-    height: 808px;
+    width: 1984px;
+    height: 900px;
     margin: 0 auto;
     background-image: url(../images/banner/banner1.png);
     background-repeat: no-repeat;
@@ -28,43 +28,43 @@ body {
 }
 
 .header-details {
-    max-width: 525px;
+    max-width: 675.8px;
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding: 216px 230px 166px 845px;
+    padding: 267.84px 248.2px 205px 1048px;
 }
 
 .header-title {
-    height: 228px;
+    height: 282.72px;
     color: rgb(21, 20, 20);
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 76px;
+    font-size: 99.2px;
+    font-weight: 868;
+    line-height: 94.24px;
     text-align: right;
-    margin-bottom: 24px;
+    margin-bottom: 29.76px;
 }
 
 .header-description {
-    width: 494px;
-    height: 78px;
+    width: 612.56px;
+    height: 96.72px;
     color: rgb(68, 67, 67);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 19.84px;
+    font-weight: 496;
+    line-height: 32.24px;
     text-align: right;
-    margin-bottom: 32px;
+    margin-bottom: 39.68px;
 }
 
 .header-btn {
-    width: 160px;
-    height: 64px;
-    border-radius: 5px;
+    width: 216.8px;
+    height: 79.36px;
+    border-radius: 6.2px;
     background: rgb(241, 91, 34);
     color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 23px;
+    font-size: 24.8px;
+    font-weight: 744;
+    line-height: 28.52px;
     border: none;
 }
 
@@ -74,49 +74,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 87px;
-    margin: 131px 322px 130px 206px;
+    gap: 107.88px;
+    margin: 162.04px 399.28px 199.88px 255.44px;
 }
 
 .fail-title {
     color: rgb(21, 20, 20);
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
+    font-size: 49.6px;
+    font-weight: 868;
+    line-height: 58.28px;
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 29.76px;
 }
 
 .fail-details {
-    width: 416px;
+    width: 515.84px;
     color: rgb(68, 67, 67);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 19.84px;
+    font-weight: 496;
+    line-height: 32.24px;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 19.84px;
 }
 
 .fail-list {
     color: rgb(68, 67, 67);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 19.84px;
+    font-weight: 496;
+    line-height: 32.24px;
     text-align: left;
-    margin-bottom: 8px;
+    margin-bottom: 9.92px;
 }
 
 .fail-img {
     color: greenyellow;
-    margin-left: 14px;
+    margin-left: 17.36px;
 }
 
 /* Plans Styles */
 
 .My-plans {
-    width: 1141px;
-    height: 300px;
-    margin: 130px 230px;
+    width: 1409.84px;
+    height: 372px;
+    margin: 199.88px 285.2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,20 +125,20 @@ body {
 
 .plan-heading {
     color: rgb(21, 20, 20);
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
+    font-size: 49.6px;
+    font-weight: 868;
+    line-height: 58.28px;
     text-align: left;
-    margin-bottom: 56;
+    margin-bottom: 69.44;
 }
 .plan-list {
-    width: 1141px;
+    width: 1409.84px;
     display: flex;
     justify-content: space-between;
 }
 
 .plans {
-    max-width: 270px;
+    max-width: 334.8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,56 +146,56 @@ body {
 }
 
 .plan-title {
-    max-width: 270px;
+    max-width: 334.8px;
     color: rgb(21, 20, 20);
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 35px;
+    font-size: 37.2px;
+    font-weight: 868;
+    line-height: 43.4px;
     text-align: center;
-    margin-top: 18px;
-    margin-bottom: 16px;
+    margin-top: 22.32px;
+    margin-bottom: 19.84px;
 }
 
 .plan-subtitle {
     color: rgb(115, 114, 114);
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 29px;
+    font-size: 31px;
+    font-weight: 620;
+    line-height: 35.96px;
     text-align: center;
 }
 
 /* Motivation Styles */
 
 .motivation {
-    width: 1140px;
-    height: 200px;
-    margin: 130px 230px;
-    border: 1px solid rgb(241, 91, 34);
+    width: 1413.6px;
+    height: 248px;
+    margin: 199.88px 285.2px;
+    border: 1.24px solid rgb(241, 91, 34);
     background-image: url(../images/gradient2.png), url(../images/watch.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 60px 0px 60px 65px;
+    padding: 92.56px 0px 92.56px 80px;
 }
 
 .motivation-title {
-    width: 459px;
+    width: 569.16px;
     color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
+    font-size: 49.6px;
+    font-weight: 868;
+    line-height: 58.28px;
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 29.76px;
 }
 
 .motivation-btn {
-    width: 160px;
-    height: 64px;
+    width: 216.8px;
+    height: 79.36px;
     color: rgb(241, 91, 34);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 23px;
-    border-radius: 5px;
+    font-size: 24.8px;
+    font-weight: 744;
+    line-height: 28.52px;
+    border-radius: 6.2px;
     border: none;
 }
 
@@ -203,18 +203,18 @@ body {
 /* Footer Styles */
 
 footer {
-    height: 350px;
-    padding: 130px 167px 130px 230px;
-    border: 1px solid rgb(241, 91, 34);
+    height: 434px;
+    padding: 161.2px 185px 161.2px 285.2px;
+    border: 1.24px solid rgb(241, 91, 34);
     background: rgb(21, 20, 20);
     display: flex;
     justify-content: space-between;
 }
 
 .future {
-    width: 485px;
-    height: 317px;
-    color: rgb(248, 248, 248,0.7);
+    width: 601.4px;
+    height: 393.08px;
+    color: rgba(248, 248, 248, 0.7);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -222,70 +222,69 @@ footer {
 
 .future-title {
     color: rgb(248, 248, 248);
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 53px;
-    margin-bottom: 16px;
+    font-size: 55.8px;
+    font-weight: 868;
+    line-height: 65.72px;
+    margin-bottom: 19.84px;
 }
 
 .future-description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 24px;
+    font-size: 19.84px;
+    font-weight: 496;
+    line-height: 32.24px;
+    margin-bottom: 29.76px;
 }
 
 .contact {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 16px;
+    font-size: 19.84px;
+    font-weight: 496;
+    line-height: 32.24px;
+    margin-bottom: 19.84px;
 }
 
 .email {
-    margin-bottom: 16px;
+    margin-bottom: 19.84px;
 }
 
-.future-img img{
-    margin-right: 11px;
+.future-img img {
+    margin-right: 13.64px;
 }
 
 .subscribe {
     display: flex;
     flex-direction: column;
     /* align-items: start; */
-
 }
 
 .subs-title {
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 29px;
-    margin-bottom: 31px;
+    font-size: 31px;
+    font-weight: 744;
+    line-height: 35.96px;
+    margin-bottom: 38.44px;
 }
 
 .subs-form input[type='email'] {
     display: block;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    padding: 21px 158px 22px 21px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    margin-bottom: 16px;
+    width: 372px;
+    height: 49.6px;
+    border-radius: 12.4px;
+    padding: 26.04px 195.92px 27.28px 26.04px;
+    font-size: 22.32px;
+    font-weight: 496;
+    line-height: 26.04px;
+    margin-bottom: 19.84px;
 }
 
 .subs-form input[type='submit'] {
     display: block;
-    width: 160px;
-    height: 64px;
-    border-radius: 8px;
+    width: 198.4px;
+    height: 79.36px;
+    border-radius: 9.92px;
     background: rgb(255, 255, 255);
     color: rgb(241, 91, 34);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
+    font-size: 24.8px;
+    font-weight: 744;
+    line-height: 29.76px;
     border: none;
 }
