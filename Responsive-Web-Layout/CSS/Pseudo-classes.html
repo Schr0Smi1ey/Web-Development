@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo HTML and CSS</title>
+    <style>
+        /* Header style */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Hover effect on header: changes text color to green and background color to aqua when hovered */
+        h1:hover {
+            color: green;
+            background-color: aqua;
+        }
+
+        /* Text input style */
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Focus effect on text input: changes border color to deepskyblue and removes outline when focused */
+        input[type="text"]:focus {
+            border-color: deepskyblue;
+            outline: none;
+        }
+
+        /* Visited link style: changes color of the link to red after it's visited */
+        a:visited {
+            color: red;
+        }
+
+        /* Nth-child styling on list items: 
+           - Even list items (2n) have background color peru 
+           - Odd list items (2n + 1) have background color blueviolet */
+        ul li:nth-child(2n) {
+            background-color: peru;
+        }
+
+        ul li:nth-child(2n + 1) {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover over this header!</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </form>
+    <p>Visit this <a href="https://example.com" target="_blank">link</a> and notice the visited color change.</p>
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+        <li>list item 6</li>
+    </ul>
+</body>
+</html>
