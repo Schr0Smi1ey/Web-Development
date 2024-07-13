@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Demo</title>
+    <link rel="stylesheet" href="../CSS/External_CSS_file/positions.css">
+</head>
+<body>
+    <div class="positions">
+        <h1>CSS Positions</h1>
+        <ul>
+            <li>Static</li> <!-- Default position, elements are positioned according to the normal flow of the document -->
+            <li>Relative</li> <!-- Elements are positioned relative to their normal position -->
+            <li>Absolute</li> <!-- Elements are positioned relative to the nearest positioned ancestor -->
+            <li>Sticky</li> <!-- Elements are positioned based on the user's scroll position -->
+            <li>Fixed</li> <!-- Elements are positioned relative to the viewport -->
+        </ul>
+    </div>
+    <div class="relative-container">
+        <div class="relative-box">Relative</div>
+        <div class="absolute-box">Absolute</div>
+    </div>
+
+    <div class="sticky-box">Sticky Header</div>
+
+    <div class="fixed-box">Fixed</div>
+
+    <!-- Content to enable scrolling for sticky element demonstration -->
+    <div style="height: 1000px;">
+        Scroll down to see the sticky element in action.
+    </div>
+</body>
+</html>
