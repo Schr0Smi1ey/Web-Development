@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            overflow: auto;
+            border: 2px solid steelblue;
+        }
+        .ellipsis{
+            width: 200px;
+            border: 2px solid steelblue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus animi sunt neque quaerat porro omnis alias quisquam ut, eaque explicabo." class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus animi sunt neque quaerat porro omnis alias quisquam ut, eaque explicabo.</p>
+    </header>
+    <div class="box">
+        <h3 class="text-box">Text Box 1</h3>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui et velit perspiciatis quos, magnam repellat veritatis reiciendis excepturi quasi esse nobis deserunt! Ipsum eos tempora neque nihil asperiores corrupti sequi fugit culpa exercitationem enim amet laboriosam qui, voluptates architecto animi maiores natus quasi soluta? Eum, est iure magnam officiis beatae non quisquam quia nostrum exercitationem dolorem vel doloremque cupiditate veritatis deserunt ad inventore id enim voluptates distinctio nihil quo iusto quam eligendi animi? Enim odit, totam sit, soluta dolores ratione nulla corrupti, hic cum delectus error accusamus exercitationem odio suscipit accusantium adipisci rerum repellendus. Vel cumque vero nihil distinctio.</p>
+    </div>
+    <div class="box">
+        <h3 class="text-box">Text Box 2</h3>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque odit dolores rem voluptas asperiores quia minima totam consequatur, recusandae aliquid fugit assumenda exercitationem. Iusto, nihil dolorem molestias asperiores ab recusandae repellendus vel provident beatae quod adipisci facilis sequi, vero quaerat vitae nulla assumenda fugit obcaecati ex eveniet. Dolore distinctio nobis, adipisci et, itaque officia dignissimos ab sed atque impedit, quam architecto quos harum! Dicta culpa cum qui nemo. Voluptatum animi, quae porro cum numquam distinctio minima vel ducimus eligendi, dolorum aliquid non architecto quidem tempore molestias eveniet sit at officia qui tempora consectetur maxime facilis minus assumenda! Voluptas, quia rem.</p>
+    </div>
+    <div class="box">
+        <h3 class="text-box">Text Box 3</h3>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos officiis tenetur hic nisi eum. Error repudiandae ea enim tempora ipsa.</p>
+    </div>
+</body>
+</html>
