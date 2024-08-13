@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid tomato;
+            background-color: peachpuff;
+            /* 
+                Transition property:
+                - property name: Specifies which CSS properties to animate (width, background-color, transform).
+                - duration: Defines how long the animation should take.
+                - easing function: Describes the speed curve of the animation.
+                - delay: Sets a time to wait before starting the animation.
+                
+                Easing functions: 
+                - linear: Constant speed
+                - ease: Slow start, fast middle, slow end
+                - ease-in: Slow start
+                - ease-out: Slow end
+                - ease-in-out: Slow start and end
+                - cubic-bezier: Custom speed curve
+                - step-start: Immediate change at start
+                - step-end: Immediate change at end
+                - steps(n, direction): Change in n steps
+            */
+            transition: width 1s linear 1s, background-color 1s linear 1s, transform 2s linear 1s;
+        }
+
+        .box:hover {
+            /* Set the width of the .box to 300px when hovered */
+            width: 300px;
+            
+            /* Change the background color to greenyellow when hovered */
+            background-color: greenyellow;
+            
+            /* Rotate the .box 45 degrees and translate it 300px to the right when hovered */
+            transform: rotate(45deg) translateX(300px);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: change the shape. This is a css style property name</li>
+        <li>Translate: it is a value of the transform style rule. This means you move either x, or y or both axis</li>
+        <li>Transition: how long it will take to do the change of the shape or color</li>
+    </ul>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</body>
+</html>

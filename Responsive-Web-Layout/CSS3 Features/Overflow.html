@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
     <style>
-        .box{
-            width: 300px;
-            height: 200px;
-            overflow: auto;
-            border: 2px solid steelblue;
-        }
-        .ellipsis{
-            width: 200px;
-            border: 2px solid steelblue;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+    .box{
+        width: 300px;
+        height: 200px;
+        
+        /* Enable scrolling if content overflows */
+        overflow: auto;
+        
+        /* Set the border of the box with a 2px solid steelblue color */
+        border: 2px solid steelblue;
+    }
+    
+    .ellipsis{
+        width: 200px;
+        border: 2px solid steelblue;
+        
+        /* Prevent the text from wrapping to a new line */
+        white-space: nowrap;
+        
+        /* Hide the overflowed content */
+        overflow: hidden;
+        
+        /* Display ellipsis (...) for the overflowed text */
+        text-overflow: ellipsis;
+    }
+
     </style>
 </head>
 <body>
