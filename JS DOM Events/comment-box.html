@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Your Comment</title>
+  </head>
+  <body>
+    <h1>Please add your comment!</h1>
+    <!-- All Comments -->
+    <section id="all-comment">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+        necessitatibus veritatis eum praesentium perferendis delectus, sapiente
+        ducimus ad a ratione provident, quae placeat obcaecati facere quibusdam
+        unde deleniti deserunt sed!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+        necessitatibus veritatis eum praesentium perferendis delectus, sapiente
+        ducimus ad a ratione provident, quae placeat obcaecati facere quibusdam
+        unde deleniti deserunt sed!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+        necessitatibus veritatis eum praesentium perferendis delectus, sapiente
+        ducimus ad a ratione provident, quae placeat obcaecati facere quibusdam
+        unde deleniti deserunt sed!
+      </p>
+    </section>
+    <!-- Post New User Comment -->
+    <section>
+      <textarea id="comment-box" cols="30" rows="10"></textarea>
+      <br />
+      <button id="btn-comment">Post Comment</button>
+    </section>
+
+    <script>
+        // step 01 : add event listener to the button
+        document.getElementById('btn-comment').addEventListener('click', function() {
+            // step 02 : Get the Comment inside the text area
+            const comment = document.getElementById('comment-box').value;
+            // step 03 : Create a new p element
+            const newComment = document.createElement('p');
+            // step 04 : Add the comment inside the p element
+            newComment.innerText = comment;
+            // step 05 : Append the p element to the all-comment section
+            document.getElementById('all-comment').appendChild(newComment);
+            // step 06 : Clear the comment box
+            comment.value = '';
+        })
+    </script>
+  </body>
+</html>

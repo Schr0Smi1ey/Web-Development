@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <!-- Title of the page -->
+    <h1>Explore Event Delegate</h1>
+    
+    <!-- A section containing the list and a button to add new list items -->
+    <section>
+        <!-- The unordered list where list items (li) are dynamically added or removed -->
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Facilis, repellendus ullam!</li>
+            <li class="item">Pariatur, quo beatae.</li>
+            <li class="item">Iure, accusamus explicabo!</li>
+            <li class="item">Reprehenderit, suscipit minus!</li>
+            <li class="item">Earum, dolores eius?</li>
+        </ul>
+
+        <!-- Button to add new list items -->
+        <button id="btn-add-item">Add Item</button>
+    </section>
+
+    <script>
+        /* 
+        Event Delegation:
+        Instead of attaching event listeners to each list item, we attach it to the parent <ul> (list-container).
+        This approach is more efficient, especially when dynamically adding or removing elements, since
+        we don't have to reattach event listeners to each new item. 
+        */
+
+        // Adding event listener to the parent element <ul id="list-container">
+        document.getElementById('list-container').addEventListener('click', function(event) {
+            // Removing the clicked item from the list by accessing the target and removing it from its parent.
+            event.target.parentNode.removeChild(event.target);
+        });
+
+        /*
+        Alternative approach (commented out):
+        This approach would attach event listeners to each list item individually. It would work, but is less efficient,
+        especially when dynamically adding items. Event delegation, as used above, avoids this inefficiency.
+        
+        const items = document.getElementsByClassName('item');
+        for(const item of items) {
+            item.addEventListener('click', function(event) {
+                event.target.parentNode.removeChild(event.target);
+            });
+        }
+        */
+
+        // Adding event listener to the 'Add Item' button
+        document.getElementById('btn-add-item').addEventListener('click', function() {
+            // Grabbing the <ul> list container element
+            const listContainer = document.getElementById('list-container');
+
+            // Creating a new <li> element to be added to the list
+            const li = document.createElement('li');
+            li.innerText = 'Brand New Item added'; // Setting the text content of the new list item
+            li.classList.add('item'); // Adding the same class to the new item for consistency
+            
+            // Appending the new <li> to the <ul>
+            listContainer.appendChild(li);
+        });
+    </script>
+</body>
+</html>

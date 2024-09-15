@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Confirmation Button</title>
+  </head>
+  <body>
+    <h1 id="repository">This is my repository</h1>
+    <input id="input-field" type="text" placeholder="Write DELETE" />
+    <button id="delete-btn" disabled>Delete Repositoty!</button>
+
+    <!-- Script -->
+    <script>
+      document.getElementById("input-field").addEventListener("keyup", function (event) {
+          const inputText = event.target.value;
+          const deleteButton = document.getElementById("delete-btn");
+          if (inputText == "DELETE") {
+            deleteButton.removeAttribute("disabled");
+          } else {
+            deleteButton.setAttribute("disabled", true);
+          }
+        });
+
+        document.getElementById("delete-btn").addEventListener("click", function () {
+            const repo = document.getElementById('repository');
+            repo.style.display = "none";
+        })
+    </script>
+  </body>
+</html>

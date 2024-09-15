@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore More Events</title>
+</head>
+<body>
+    <h1>Explore More events</h1>
+
+    <!-- Button to explore events -->
+    <button id="btn-more">Events</button>
+
+    <!-- Input field where events are being tracked -->
+    <input id="text-field" type="text">
+
+    <script>
+        // Add an event listener for 'focus' when the user clicks into the input field
+        document.getElementById('text-field').addEventListener('focus', function() {
+            console.log('Event triggered inside the input field');
+        });
+
+        // Add an event listener for 'blur' when the input field loses focus
+        document.getElementById('text-field').addEventListener('blur', function() {
+            console.log('Event triggered inside the input field loses focus');
+        });
+
+        // Add an event listener for 'keydown' when a key is pressed down in the input field
+        // document.getElementById('text-field').addEventListener('keydown', function(event) {
+        //     console.log(event.target.value);  // Logs the current value of the input
+        // });
+
+        // Add an event listener for 'keypress' when a key is pressed and held in the input field
+        // document.getElementById('text-field').addEventListener('keypress', function(event) {
+        //     console.log(event.target.value);  // Logs the current value of the input
+        // });
+
+        // Add an event listener for 'keyup' when a key is released in the input field ----> we will use this to retrive the value of the input field
+        document.getElementById('text-field').addEventListener('keyup', function(event) {
+            console.log('Key released:', event.target.value);  // Logs the current value when key is released
+        });
+
+        // Add an event listener for 'click' on the "Events" button
+        document.getElementById('btn-more').addEventListener('click', function() {
+            console.log('Button clicked');  // Logs that the button was clicked
+        });
+    </script>
+</body>
+</html>

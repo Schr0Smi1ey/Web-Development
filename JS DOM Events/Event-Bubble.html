@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation Example</title>
+</head>
+<body>
+    <h1>Explore Event Bubble</h1>
+    <!-- List with multiple items where events will be triggered -->
+    <section>
+        <ul>
+            <li id="item-1">Item 1</li>
+            <li id="item-2">Item 2</li>
+            <li id="item-3">Item 3</li>
+            <li id="item-4">Item 4</li>
+            <li id="item-5">Item 5</li>
+            <li id="item-6">Item 6</li>
+        </ul>
+    </section>
+
+    <script>
+        // Concept: Event Propagation happens in 3 phases: Capture -> Target -> Bubbling.
+        // Capture: Event moves from root to the target.
+        // Target: Event reaches the target element.
+        // Bubbling: Event moves back up from target to the root.
+
+        // 1st event listener on 'item-3'
+        document.getElementById('item-3').addEventListener('click', function(event) {
+            console.log('Item-3 clicked');
+            // stopPropagation: Stops further bubbling but allows other listeners on the same element.
+            event.stopPropagation();  // Stops event from bubbling up to parent elements
+        });
+
+        // 2nd event listener on 'item-3'
+        document.getElementById('item-3').addEventListener('click', function(event) {
+            console.log('Item-3 second clicked');
+        });
+
+        // 3rd event listener on 'item-3'
+        document.getElementById('item-3').addEventListener('click', function(event) {
+            console.log('Item-3 third clicked');
+        });
+
+        // 4th event listener on 'item-3'
+        document.getElementById('item-3').addEventListener('click', function(event) {
+            console.log('Item-3 fourth clicked');
+        });
+
+        // stopImmediatePropagation: Stops the event from continuing to other listeners on the same element.
+        document.getElementById('item-2').addEventListener('click', function(event) {
+            console.log('Item-2 clicked with stopImmediatePropagation');
+            // stopImmediatePropagation: Prevents any further listeners on 'item-2' from executing.
+            event.stopImmediatePropagation();  // Stops event from continuing to any other listeners on 'item-2'
+        });
+
+        // Notes:
+        // stopPropagation() only stops the event from bubbling to parent elements but allows other listeners on the same element.
+        // stopImmediatePropagation() stops all event listeners on the same element from executing.
+    </script>
+</body>
+</html>

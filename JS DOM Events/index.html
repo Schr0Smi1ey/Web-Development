@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Events</title>
+  </head>
+  <body>
+    <!-- DOM Event Handler Ways -->
+    <section>
+      <h1 onclick="console.log('I am clicked!')">DOM er ajke special Events</h1>
+      <button onclick="console.log('printing : 7')">Click Me!</button>
+      <button onclick="console.log('printing : 65')">Another Button!</button>
+
+      <!-- Way 01 to add event handling -->
+      <button onclick="document.body.style.backgroundColor ='yellow'">
+        Make Yellow!
+      </button>
+
+      <!-- Way 02 to add event handling -->
+      <button onclick="makeRed()">Make Red!</button>
+
+      <!-- Way 03 to add event handling -->
+      <button id="makeBlue">Make Blue!</button>
+
+      <!-- Way 03(another) to add event handling -->
+      <button id="makeGreen">Make Green!</button>
+
+      <!-- Way 04 to add event handling -->
+      <button id="makePink">Make Pink!</button>
+
+      <!-- Way 04 Final -->
+      <button id="makeOrange">Make Orange!</button>
+    </section>
+
+    <!-- Final DOM Event Handler -->
+    <section>
+      <h1>Final DOM Event Handler</h1>
+      <h3 id="handler-status" style="color: green">
+        The Button is still not clicked!
+      </h3>
+
+      <!-- Option : 01 -->
+      <button onclick="handleOnClick()">On Click Button!</button>
+
+      <!-- Option : 02 -->
+      <button id="event-listener-button">Add Event Listener Button!</button>
+
+      <!-- Option : 02 (Recap) -->
+      <p id="input-text-display" style="color: green">
+        The text isn't yet updated through the input field
+      </p>
+      <input id="input-field" type="text" />
+      <br />
+      <br />
+      <button id="btn-update">Update!</button>
+    </section>
+    <script src="events.js"></script>
+    <script src="finalEvents.js"></script>
+    <script>
+       
+      
+    </script>
+  </body>
+</html>
