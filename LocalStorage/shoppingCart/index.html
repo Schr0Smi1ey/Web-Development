@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+   <div class="container mx-auto">
+     <div class="mt-20 mx-auto">
+      <input
+        type="text"
+        placeholder="Product Name"
+        id="product-name"
+        class="border-2 border-gray-400 h-5 p-5 rounded-lg"
+      />
+      <input
+        type="text"
+        placeholder="quantity"
+        id="product-quantity"
+        class="border-2 border-gray-400 h-5 p-5 rounded-lg"
+      />
+      <button onclick="addProduct()" class="border-2 border-gray-400 p-2 rounded-lg">Add Product</button>
+    </div>
+    <div id="product-container" class="mt-20 mx-auto"></div>
+   </div>
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
