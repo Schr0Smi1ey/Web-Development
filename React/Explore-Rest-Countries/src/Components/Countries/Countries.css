@@ -1,0 +1,28 @@
+.country-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.visited-countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.visited-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.visited-country {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.visited-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
