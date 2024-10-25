@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Rolex Submariner",
+        "price": 8500,
+        "brand": "Rolex"
+    },
+    {
+        "id": 2,
+        "name": "Omega Seamaster",
+        "price": 5000,
+        "brand": "Omega"
+    },
+    {
+        "id": 3,
+        "name": "Casio G-Shock",
+        "price": 100,
+        "brand": "Casio"
+    },
+    {
+        "id": 4,
+        "name": "Tag Heuer Carrera",
+        "price": 4000,
+        "brand": "Tag Heuer"
+    },
+    {
+        "id": 5,
+        "name": "Seiko 5 Automatic",
+        "price": 300,
+        "brand": "Seiko"
+    },
+    {
+        "id": 6,
+        "name": "Fossil Gen 5",
+        "price": 250,
+        "brand": "Fossil"
+    },
+    {
+        "id": 7,
+        "name": "Apple Watch Series 8",
+        "price": 399,
+        "brand": "Apple"
+    },
+    {
+        "id": 8,
+        "name": "Breitling Navitimer",
+        "price": 9000,
+        "brand": "Breitling"
+    },
+    {
+        "id": 9,
+        "name": "Tissot PRX",
+        "price": 350,
+        "brand": "Tissot"
+    },
+    {
+        "id": 10,
+        "name": "Hamilton Khaki Field",
+        "price": 500,
+        "brand": "Hamilton"
+    }
+]
