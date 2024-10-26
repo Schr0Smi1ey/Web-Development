@@ -1,0 +1,22 @@
+.bottle {
+  border: 2px solid salmon;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.bottle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.purchase-btn {
+  background-color: salmon;
+  color: white;
+  padding: 5px 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
